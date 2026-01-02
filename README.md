@@ -148,6 +148,21 @@ grep '^iteration:' .claude/ralph-loop.local.md
 head -10 .claude/ralph-loop.local.md
 ```
 
+## Debug Log
+
+The stop hook writes debug logs to `.claude/ralph-debug.log` for troubleshooting. This file records:
+
+- When the hook is triggered
+- Parsed state (iteration, max_iterations, completion_promise)
+- Transcript parsing results
+- Success/error messages
+
+**Cleanup:** Delete the log file if it gets too large:
+
+```bash
+rm -f .claude/ralph-debug.log
+```
+
 ## Project Structure
 
 ```
