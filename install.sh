@@ -97,7 +97,7 @@ echo -e "${GREEN}[3/5] Copying files...${NC}"
 # Commands
 cp "$repo_dir/commands/ralph-loop.md" "$claude_dir/commands/ralph-loop.md"
 cp "$repo_dir/commands/cancel-ralph.md" "$claude_dir/commands/cancel-ralph.md"
-cp "$repo_dir/commands/help.md" "$claude_dir/commands/help-ralph.md"
+cp "$repo_dir/commands/help-ralph.md" "$claude_dir/commands/help-ralph.md"
 echo -e "${GRAY}      Copied commands${NC}"
 
 # Hooks
