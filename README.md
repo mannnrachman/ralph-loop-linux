@@ -75,7 +75,7 @@ mkdir -p .claude/commands .claude/hooks .claude/scripts
 ```bash
 cp commands/ralph-loop.md .claude/commands/
 cp commands/cancel-ralph.md .claude/commands/
-cp commands/help.md .claude/commands/help-ralph.md
+cp commands/help-ralph.md .claude/commands/
 cp hooks/stop-hook.sh .claude/hooks/
 cp scripts/setup-ralph-loop.sh .claude/scripts/
 cp settings.local.json .claude/
@@ -155,7 +155,7 @@ ralph-loop-linux/
 ├── commands/
 │   ├── ralph-loop.md        # /ralph-loop command
 │   ├── cancel-ralph.md      # /cancel-ralph command
-│   └── help.md              # /help-ralph command
+│   └── help-ralph.md        # /help-ralph command
 ├── hooks/
 │   └── stop-hook.sh         # Core loop logic (bash)
 ├── scripts/

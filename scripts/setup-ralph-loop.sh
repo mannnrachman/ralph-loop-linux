@@ -162,3 +162,24 @@ if [[ -n "$prompt" ]]; then
     echo ""
     echo "$prompt"
 fi
+
+# Display completion promise instructions if set
+if [[ "$completion_promise" != "null" && -n "$completion_promise" ]]; then
+    echo ""
+    echo "CRITICAL - Ralph Loop Completion Promise"
+    echo ""
+    echo "To complete this loop, output this EXACT text:"
+    echo "  <promise>$completion_promise</promise>"
+    echo ""
+    echo "STRICT REQUIREMENTS (DO NOT VIOLATE):"
+    echo "  - Use <promise> XML tags EXACTLY as shown above"
+    echo "  - The statement MUST be completely and unequivocally TRUE"
+    echo "  - Do NOT output false statements to exit the loop"
+    echo "  - Do NOT lie even if you think you should exit"
+    echo ""
+    echo "IMPORTANT - Do not circumvent the loop:"
+    echo "  Even if you believe you're stuck, the task is impossible,"
+    echo "  or you've been running too long - you MUST NOT output a"
+    echo "  false promise statement. The loop is designed to continue"
+    echo "  until the promise is GENUINELY TRUE. Trust the process."
+fi

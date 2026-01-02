@@ -1,15 +1,22 @@
 {
-    "hooks": {
-        "Stop": [
-            {
-                "matcher": "",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "bash \".claude/hooks/stop-hook.sh\""
-                    }
-                ]
-            }
+  "permissions": {
+    "allow": [
+      "Skill(ralph-loop)",
+      "Bash(jq:*)",
+      "Bash(bash .claude/scripts/setup-ralph-loop.sh *)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \".claude/hooks/stop-hook.sh\""
+          }
         ]
-    }
+      }
+    ]
+  }
 }
